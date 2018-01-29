@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  margin: 20vh 50px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #4571DA;
+  font-weight: 900;
+}
+
+.box {
+  margin: 30px 0;
+}
+
+.col-4 {
+  width: 30%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+
+/* Nav Bar */
+
+header {
+  background: url(../images/blue-texture.jpeg);
+  background-repeat: repeat;
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+nav img {
+  width: 100px;
+  margin-bottom: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3;
+  font-size: 20px;
+}
+
+
+
+/* Main Content */
+
+main {
+  margin-left: 220px;
+}
+
+/* Banner */
+
+#home-banner {
+  height: 50vh;
+  background: url(../images/desktop.jpeg) no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+
+/* Work Experience */
+
+#work {
+  display: flex;
+  justify-content: space-around;
+}
+
+#work .box {
+  text-align: center;
+}
+
+#work .icon {
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  width: 30px;
+  margin-top: 20px;
+}
+
+
+/* Portfolio */
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+}
+
+.tag:first-of-type {
+  margin-left: 0px;
+}
+
+.tag {
+  border: 1px solid #4571DA;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #4571DA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

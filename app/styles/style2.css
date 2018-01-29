@@ -1,0 +1,260 @@
+/* General */
+
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2.7em;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #444;
+}
+
+h2 {
+	font-size: 4em;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+p {
+	font-size: 1.5em;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	font-family: 'Roboto', sans-serif;
+}
+
+button {
+	padding: 7px 20px;
+	background-color: #3E424A;
+	color: #F5F5F5;
+	font-size: 1.4em;
+	border-radius: 8px;
+	font-weight: 300;
+}
+
+section {
+	padding: 70px 0;
+}
+
+	.dark-text {
+		color: #666;
+	}
+
+	.light-text {
+		color: #ccc;
+	}
+
+	.dark-back {
+		background-color: #3B444B;
+	}
+
+	.light-back {
+		background-color: #F5F5F5;
+	}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.half {
+	width: 50%;
+}
+
+.third {
+	display: flex;
+	width: 30%;
+}
+
+/* Top Banner */
+
+#jumbotron {
+  height: 400px;
+  background: url(../images/desktop.jpeg) no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+/* NavBar */
+
+#navbar {
+	width: 100%;
+	display: flex;
+	background-color: #3B444B;
+	box-shadow: 2px 2px 20px #333;
+}
+
+nav {
+	display: flex;
+	margin: auto;
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 22px;
+	margin: auto 25px;
+}
+
+nav img {
+	height: 40px;
+}
+
+/* About Me */
+
+#about p {
+	line-height: 1.5;
+}
+
+/* Portfolio */
+
+#portfolio a, #portfolio p {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#portfolio a {
+	font-weight: 700;
+}
+
+#portfolio p {
+	font-weight: 300;
+	margin: 10px 0 40px;
+}
+
+#portfolio img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact-option {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.contact-option p {
+	margin-left: 20px;
+}
+
+#contact input , #contact textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	font-size: 1.4em;
+	resize: none;
+	font-weight: 300;
+	color: #333;
+}
+
+input::-webkit-input-placeholder {
+color: #aaa !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #aaa !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #aaa !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #aaa !important;  
+}
+
+textarea::-webkit-input-placeholder {
+color: #aaa !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: #aaa !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #aaa !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: #aaa !important;  
+}
+
+/* Blog Post */
+
+.blog-title {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.date {
+	font-size: 1em;
+	line-height: 2em;
+	font-family: 'Roboto', sans-serif;
+	color: #94a2af;
+}
+
+#blog button {
+	float: right;
+	margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+	background-color: #222;
+	padding: 20px 0;
+}
+
+footer p {
+	text-align: center;
+	font-size: 1em;
+}
+
+.icons {
+	margin: 20px auto;
+	width: 212px;
+}
+
+footer img {
+	width: 30px;
+	margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
