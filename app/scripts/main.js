@@ -74,3 +74,6 @@
 
   // Your custom JavaScript goes here
 })();
+
+
+$('.parallax-window').parallax({imageSrc: './images/desktop.jpeg'});

@@ -33,11 +33,20 @@ a {
 
 button {
 	padding: 7px 20px;
-	background-color: #3E424A;
+	background-color: #3B444B;
 	color: #F5F5F5;
 	font-size: 1.4em;
 	border-radius: 8px;
 	font-weight: 300;
+	border: 1px solid #F5F5F5;
+}
+
+button:hover {
+	background-color: #F5F5F5;
+	color: #3B444B;
+	border: 1px solid #3B444B;
+	transition: background-color 1s;
+	transition: color 0.5s;
 }
 
 section {
@@ -86,9 +95,7 @@ section {
 
 #jumbotron {
   height: 400px;
-  background: url(../images/desktop.jpeg) no-repeat;
-  background-size: cover;
-  background-position: left bottom;
+  background: transparent;
 }
 
 /* NavBar */
@@ -102,18 +109,26 @@ section {
 
 nav {
 	display: flex;
-	margin: auto;
-	padding: 10px;
+	margin: 20px auto;
+}
+
+nav .nav-link-box {
+	display: flex;
+}
+
+nav .nav-link-box:hover {
+	border-bottom: 2px solid #fff;
 }
 
 nav a {
 	text-decoration: none;
 	font-size: 22px;
-	margin: auto 25px;
+	margin: auto 30px;
 }
 
 nav img {
 	height: 40px;
+	margin: auto 20px;
 }
 
 /* About Me */
@@ -162,41 +177,42 @@ nav img {
 	border: 2px solid #ccc;
 	border-radius: 8px;
 	font-size: 1.4em;
+	font-family: 'Roboto', sans-serif;
 	resize: none;
 	font-weight: 300;
 	color: #333;
 }
 
 input::-webkit-input-placeholder {
-color: #aaa !important;
+	color: #aaa !important;
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
  
 input::-moz-placeholder {  /* Firefox 19+ */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
  
 input:-ms-input-placeholder {  
-color: #aaa !important;  
+	color: #aaa !important;  
 }
 
 textarea::-webkit-input-placeholder {
-color: #aaa !important;
+	color: #aaa !important;
 }
  
 textarea:-moz-placeholder { /* Firefox 18- */
-color: #aaa !important;  
+	color: #aaa !important;
 }
  
 textarea::-moz-placeholder {  /* Firefox 19+ */
-color: #aaa !important;  
+	color: #aaa !important;
 }
  
 textarea:-ms-input-placeholder {  
-color: #aaa !important;  
+	color: #aaa !important;
 }
 
 /* Blog Post */

@@ -16,7 +16,7 @@
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Web Starter Kit">
-	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+	<link rel="icon" href="images/dark-grey-logo.png">
 
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -39,17 +39,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700|Roboto:300,700" rel="stylesheet">
 </head>
 <body>
-	<div id="jumbotron">
+	<!--<div id="jumbotron" speed="0.5">
+-->
+	<div id="jumbotron" data-parallax="scroll" data-image-src="./images/desktop.jpeg" data-position="bottom" data-speed="0.4"></div>
 
 	</div>
 
 	<div id="navbar">
 		<nav>
-			<a href="index.html" class="light-text">Home</a>
+			<div class="nav-link-box">
+				<a href="index.html" class="light-text">Home</a>
+			</div>
+			<div class="nav-link-box">
 			<a href="index.html" class="light-text">Portfolio</a>
+			</div>
+
 			<img src="images/light-grey-logo.png" alt="Tyler Putnam Logo">
+			
+			<div class="nav-link-box">
 			<a href="index.html" class="light-text">Contact</a>
+			</div>
+			<div class="nav-link-box">
 			<a href="index.html" class="light-text">Blog</a>
+			</div>
 		</nav>
 	</div>
 
@@ -160,6 +172,10 @@
 		<p class="dark-text">&copy; 2018 Tyler Putnam | All Rights Reserved</p>
 	</footer>
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="scripts/parallax.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
 
