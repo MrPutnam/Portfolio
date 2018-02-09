@@ -1,8 +1,13 @@
-/* General */
+/********** General **********/
+
 
 *, html, body {
 	margin: 0;
 	padding: 0;
+}
+
+hr {
+	margin-bottom: 10px;
 }
 
 h1 {
@@ -10,7 +15,6 @@ h1 {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 700;
 	margin-bottom: 10px;
-	color: #444;
 }
 
 h2 {
@@ -39,6 +43,7 @@ button {
 	border-radius: 8px;
 	font-weight: 300;
 	border: 1px solid #F5F5F5;
+	cursor: pointer;
 }
 
 button:hover {
@@ -62,7 +67,7 @@ section {
 	}
 
 	.dark-back {
-		background-color: #3B444B;
+		background-color: #3E424A;
 	}
 
 	.light-back {
@@ -86,58 +91,105 @@ section {
 	width: 50%;
 }
 
-.third {
-	display: flex;
-	width: 30%;
-}
 
-/* Top Banner */
+/********** Top Banner **********/
+
 
 #jumbotron {
-  height: 400px;
-  background: transparent;
+	height: 500px;
+  	background: transparent;
+  	display: flex;
 }
 
-/* NavBar */
+#jumbotron .container {
+	max-width: 350px;
+	text-align: center;
+	margin: auto;
+}
+
+#jumbotron h1 {
+	font-size: 3em;
+}
+
+#jumbotron p {
+	font-size: 1.7em;
+}
+
+
+/********** NavBar **********/
+
 
 #navbar {
 	width: 100%;
 	display: flex;
-	background-color: #3B444B;
 	box-shadow: 2px 2px 20px #333;
+	z-index: 100;
 }
 
 nav {
 	display: flex;
-	margin: 20px auto;
-}
-
-nav .nav-link-box {
-	display: flex;
+	margin: 0 auto;
+	height: 70px;
 }
 
 nav .nav-link-box:hover {
 	border-bottom: 2px solid #fff;
+	color: #fff;
+	text-shadow: 2px 2px #333;
 }
 
 nav a {
 	text-decoration: none;
 	font-size: 22px;
 	margin: auto 30px;
+	line-height: 67px;
 }
 
-nav img {
-	height: 40px;
-	margin: auto 20px;
+#navbar-logo {
+	background: url("../images/logo/light-grey-logo.png");
+	background-size: cover;
+	height: 50px;
+	width: 69px;
+	margin: auto;
 }
 
-/* About Me */
+#navbar-logo:hover {
+	background: url("../images/logo/white-logo.png");
+	background-size: cover;
+	height: 50px;
+	width: 69px;
+	margin: auto;
+	cursor: pointer;
+}
+
+.active-link {
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	text-shadow: 2px 2px #333;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+}
+
+.navbar-fixed-margin-top {
+	margin-top: 70px;
+}
+
+
+/********** About Me **********/
+
 
 #about p {
 	line-height: 1.5;
 }
 
-/* Portfolio */
+
+/********** Portfolio **********/
+
 
 #portfolio a, #portfolio p {
 	font-size: 16px;
@@ -158,7 +210,14 @@ nav img {
 	margin-bottom: 10px;
 }
 
-/* Contact */
+.portfolio-picture {
+	display: flex;
+	width: 30%;
+}
+
+
+/********** Contact **********/
+
 
 .contact-option {
 	display: flex;
@@ -174,7 +233,7 @@ nav img {
 	width: 100%;
 	padding: 10px;
 	margin: 10px 0;
-	border: 2px solid #ccc;
+	border: 2px solid #aaa;
 	border-radius: 8px;
 	font-size: 1.4em;
 	font-family: 'Roboto', sans-serif;
@@ -183,42 +242,21 @@ nav img {
 	color: #333;
 }
 
-input::-webkit-input-placeholder {
-	color: #aaa !important;
-}
- 
-input:-moz-placeholder { /* Firefox 18- */
-	color: #aaa !important;  
-}
- 
-input::-moz-placeholder {  /* Firefox 19+ */
-	color: #aaa !important;  
-}
- 
-input:-ms-input-placeholder {  
-	color: #aaa !important;  
-}
+/* Changes Input and Textarea placeholder color to light grey */
+input::-webkit-input-placeholder { color: #aaa !important; }
+input:-moz-placeholder { /* Firefox 18- */ color: #aaa !important; } 
+input::-moz-placeholder {  /* Firefox 19+ */ color: #aaa !important; }
+input:-ms-input-placeholder { color: #aaa !important; }
+textarea::-webkit-input-placeholder { color: #aaa !important; }
+textarea:-moz-placeholder { /* Firefox 18- */ color: #aaa !important; }
+textarea::-moz-placeholder {  /* Firefox 19+ */ color: #aaa !important; }
+textarea:-ms-input-placeholder { color: #aaa !important; }
 
-textarea::-webkit-input-placeholder {
-	color: #aaa !important;
-}
- 
-textarea:-moz-placeholder { /* Firefox 18- */
-	color: #aaa !important;
-}
- 
-textarea::-moz-placeholder {  /* Firefox 19+ */
-	color: #aaa !important;
-}
- 
-textarea:-ms-input-placeholder {  
-	color: #aaa !important;
-}
 
-/* Blog Post */
+/********** Blog Post *********/
+
 
 .blog-title {
-	color: #fff;
 	margin-bottom: 0;
 }
 
@@ -230,11 +268,21 @@ textarea:-ms-input-placeholder {
 }
 
 #blog button {
-	float: right;
+	position: relative;
 	margin-top: 10px;
+	align-self: flex-end;
 }
 
-/* Footer */
+.post {
+	margin-top: 70px;
+}
+
+.post button {
+	position: initial;
+	right: 0;
+}
+
+/********** Footer **********/
 
 footer {
 	background-color: #222;
@@ -256,10 +304,37 @@ footer img {
 	margin: 0 10px;
 }
 
+@media screen and (max-width: 1100px) {
+	.portfolio-picture {
+		width: 45%;
+	}
+}
 
+@media screen and (max-width: 900px) {
+	.portfolio-picture, .half, input, textarea, .container {
+		width: 90%;
+	}
 
+	h1 {
+		font-size: 2em;
+	}
 
+	h2 {
+		font-size: 2.5em;
+	}
 
+	p {
+		font-size: 1em;
+	}
+
+	nav a {
+		margin: auto 10px;
+	}
+
+	#navbar-logo {
+		display: none;
+	}
+}
 
 
 

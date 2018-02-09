@@ -81,11 +81,27 @@ main {
 
 /* Banner */
 
-#home-banner {
-  height: 50vh;
-  background: url(../images/desktop.jpeg) no-repeat;
-  background-size: cover;
-  background-position: left bottom;
+#jumbotron {
+  height: 500px;
+  background: transparent;
+  display: flex;
+}
+
+#jumbotron .container {
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+#jumbotron h1 {
+  font-size: 3.5em;
+  margin: 0;
+  color: #eee;
+}
+
+#jumbotron p {
+  font-size: 1.7em;
+  color: #ccc;
 }
 
 

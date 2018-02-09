@@ -16,7 +16,7 @@
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="Web Starter Kit">
-	<link rel="icon" href="images/dark-grey-logo.png">
+	<link rel="icon" href="images/logo/dark-grey-logo.png">
 
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,33 +41,47 @@
 <body>
 	<!--<div id="jumbotron" speed="0.5">
 -->
-	<div id="jumbotron" data-parallax="scroll" data-image-src="./images/desktop.jpeg" data-position="bottom" data-speed="0.4"></div>
+	<div id="jumbotron" data-parallax="scroll" data-image-src="./images/desktop.jpeg" data-position="bottom" data-speed="0.4">
+		<div class="container">
+			<h1 class="light-text">Tyler Putnam</h1>
+			<hr>
+			<p class="light-text">Web Designer &amp; Developer</p>
+		</div>
+	</div>
 
 	</div>
 
-	<div id="navbar">
+	<div id="navbar" class="dark-back">
 		<nav>
-			<div class="nav-link-box">
-				<a href="index.html" class="light-text">Home</a>
-			</div>
-			<div class="nav-link-box">
-			<a href="index.html" class="light-text">Portfolio</a>
-			</div>
+			<a href="style2.html" class="light-text">
+				<div class="nav-link-box">
+					Home
+				</div>
+			</a>
+			<a href="#portfolio" id="portfolio-link" class="light-text">
+				<div class="nav-link-box">
+					Portfolio
+				</div>
+			</a>
 
-			<img src="images/light-grey-logo.png" alt="Tyler Putnam Logo">
+			<div id="navbar-logo"><a href="#"></a></div>
 			
-			<div class="nav-link-box">
-			<a href="index.html" class="light-text">Contact</a>
-			</div>
-			<div class="nav-link-box">
-			<a href="index.html" class="light-text">Blog</a>
-			</div>
+			<a href="#contact" id="contact-link" class="light-text">
+				<div class="nav-link-box">
+					Contact
+				</div>
+			</a>
+			<a href="blog.html" class="light-text">
+				<div class="nav-link-box">
+					Blog
+				</div>
+			</a>
 		</nav>
 	</div>
 
 	<section id="about" class="light-back">
 		<div class="container">
-			<h1>About Me</h1>
+			<h1 class="dark-text">About Me</h1>
 			<p class="dark-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</section>
@@ -75,42 +89,42 @@
 	<section id="portfolio" class="dark-back">
 		<h2 class="light-text">PORTFOLIO</h2>
 		<div class="grid">
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
 					<p class="light-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 				</div>
 			</div>
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
 					<p class="light-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 				</div>
 			</div>
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
 					<p class="light-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 				</div>
 			</div>
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
 					<p class="light-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 				</div>
 			</div>
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
 					<p class="light-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 				</div>
 			</div>
-			<div class="third">
+			<div class="portfolio-picture">
 				<div class="box">
 					<img src="images/sample-website.jpg">
 					<a href="#" class="light-text">ExampleWebsite.com</a>
@@ -122,7 +136,7 @@
 
 	<section id="contact" class="light-back">
 		<div class="container">
-			<h1>Contact Me</h1>
+			<h1 class="dark-text">Contact Me</h1>
 			<div class="grid">
 				<div class="half">
 					<div class="contact-option">
@@ -154,11 +168,11 @@
 		<h2 class="light-text">BLOG POSTS</h2>
 		<div class="container">
 			<div class="post">
-				<h1 class="blog-title">Blog post title</h1>
-				<span class="date">Jan 18, 2017</span>
+				<h1 class="blog-title light-text">Blog post title</h1>
+				<time class="date">Jan 18, 2017</time>
 				<p class="light-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+				<a  href="blog.html"><button>More Posts</button></a>
 			</div>
-			<button>More Posts</button>
 		</div>
 	</section>
 
@@ -176,6 +190,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="scripts/parallax.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/navbar-fix.js"></script>
+    <script src="scripts/navbar-highlights.js"></script>
 </body>
 </html>
 
