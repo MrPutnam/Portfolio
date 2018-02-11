@@ -10,14 +10,14 @@ $(document).ready(function() {
       //if you hard code, then use console
       //.log to determine when you want the 
       //nav bar to stick.  
-    if ($(window).scrollTop() > $('#portfolio').offset().top) {
+    if ($(window).scrollTop() > $('#portfolio').offset().top - 90) {
       $('#portfolio-link').addClass('active-link');
       $('#contact-link').removeClass('active-link');
     }
-    if ($(window).scrollTop() < $('#portfolio').offset().top) {
+    if ($(window).scrollTop() < $('#portfolio').offset().top - 90) {
       $('#portfolio-link').removeClass('active-link');
     }
-    if ($(window).scrollTop() > $('#contact').offset().top) {
+    if ($(window).scrollTop() > $('#contact').offset().top - 90) {
       $('#contact-link').addClass('active-link');
       $('#portfolio-link').removeClass('active-link');
     }
